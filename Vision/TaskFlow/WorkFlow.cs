@@ -60,7 +60,7 @@ namespace Vision.TaskFlow
             mJobData = jobData;
             InitTcp();
             //InitPort();
-            InitializeSerialPort();
+            //InitializeSerialPort();
         }
         public void InitWarkFlow(JobData jobData)
         {

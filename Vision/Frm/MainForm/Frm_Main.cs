@@ -720,7 +720,7 @@ namespace Vision.Frm.MainForm
                     timerDelete.Elapsed -= TimerDelete_Elapsed;
                     UnsubscribeEvents();
                     mWorkFlow.mClient.CloseSocket();
-                    mWorkFlow.CloseLightAll();
+                    //mWorkFlow.CloseLightAll();
                     LogUtil.Log("软件关闭");
                     cts.Cancel();
                     Thread.Sleep(500);
