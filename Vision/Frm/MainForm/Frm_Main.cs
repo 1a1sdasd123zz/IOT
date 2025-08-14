@@ -841,13 +841,5 @@ namespace Vision.Frm.MainForm
             }
             mWorkFlow.bPutLight = !mWorkFlow.bPutLight;
         }
-
-        private void toolStripMenuItem6_Click(object sender, EventArgs e)
-        {
-            TaskFlow.ImageInfo imageInfo = default(TaskFlow.ImageInfo);
-            imageInfo.Type = EnumStation.上料相机;
-            imageInfo.CogImage = null;
-            mWorkFlow.RunTool(imageInfo);
-        }
     }
 }

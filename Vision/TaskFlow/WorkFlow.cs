@@ -378,25 +378,29 @@ namespace Vision.TaskFlow
                             var station = strMsg[1];
                             LogUtil.Log($"收到触发信号[{station}]");
 
-                            switch (station)
-                            {
-                                case "OP":
-                                {
-                                    Row = int.Parse(strMsg[2]);
-                                    Col = int.Parse(strMsg[3]);
-                                    var type = EnumStation.上料相机;
-                                    counts[(int)type] = 0;
-                                    CameraRun_2D(type);
-                                    break;
-                                }
-                                default:
-                                {
-                                    LogUtil.Log("消息解析与协议不一致");
-                                    return;
-                                }
+                            //switch (station)
+                            //{
+                            //    case "OP":
+                            //    {
+                            //        Row = int.Parse(strMsg[2]);
+                            //        Col = int.Parse(strMsg[3]);
+                            //        var type = EnumStation.上料相机;
+                            //        counts[(int)type] = 0;
+                            //        CameraRun_2D(type);
+                            //        break;
+                            //    }
+                            //    default:
+                            //    {
+                            //        LogUtil.Log("消息解析与协议不一致");
+                            //        return;
+                            //    }
 
-                            }
-
+                            //}
+                            Row = int.Parse(strMsg[2]);
+                            Col = int.Parse(strMsg[3]);
+                            var type = EnumStation.上料相机;
+                            counts[(int)type] = 0;
+                            CameraRun_2D(type);
                             break;
                         }
                     }
@@ -477,7 +481,7 @@ namespace Vision.TaskFlow
             ImageQueue.Enqueue(item);
         }
 
-        public void RunTool(ImageInfo imageInfo)
+        private void RunTool(ImageInfo imageInfo)
         {
             try
             {

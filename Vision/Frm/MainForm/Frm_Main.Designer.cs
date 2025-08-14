@@ -71,7 +71,6 @@ namespace Vision.Frm.MainForm
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dockPanel_Main = new WeifenLuo.WinFormsUI.Docking.DockPanel();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -89,8 +88,7 @@ namespace Vision.Frm.MainForm
             this.硬件模块toolStripMenuItem,
             this.算法模块toolStripMenuItem,
             this.视图ToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem6});
+            this.toolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1718, 32);
@@ -416,13 +414,6 @@ namespace Vision.Frm.MainForm
             this.dockPanel_Main.TabIndex = 11;
             this.dockPanel_Main.Theme = this.vS2015BlueTheme1;
             // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(201, 28);
-            this.toolStripMenuItem6.Text = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
-            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 33F);
@@ -490,7 +481,6 @@ namespace Vision.Frm.MainForm
         private ToolStripMenuItem toolStripMenuItem2;
         private ToolStripMenuItem toolStripMenuItem4;
         private ToolStripMenuItem toolStripMenuItem5;
-        private ToolStripMenuItem toolStripMenuItem6;
     }
 }
 
